@@ -24,8 +24,10 @@ git push origin homolog
 
 E ai podemos testar no heroku para ver se está tudo em ordem. 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+----------------------------------------------------------------------------------------------------------------------------------
+A branch homolog já está ligada com o heroku! O deploy automático já foi habilitado e está disponivel no link: 
+https://projeto-unifeob-open.herokuapp.com/
+----------------------------------------------------------------------------------------------------------------------------------
 Instalações recomendadas: 
 
 instalar o npm e o composer. Se precisarmos de mais algo vou atualizando o readme!!!
