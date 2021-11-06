@@ -1,0 +1,121 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $color-white-bg;
+}
+
+//! BOTÕES //
+
+.btn-primary {
+    color: #fff;
+    background-color: $color-yellow-light;
+    border-color: var(--yellow);
+    text-shadow: 1px 1px 2px rgb(102, 102, 102);
+    font-weight: bolder;
+    transition: 0.4s;
+    width: 100px;
+}
+
+.btn-primary:hover {
+    color: $color-blue-dark !important;
+    background-color: $color-yellow-dark;
+    border-color: $color-yellow-dark;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    box-shadow: 0 0 0 .2rem $color-yellow-bd
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    color: $color-blue-dark;
+    background-color: $color-yellow-light;
+    border-color: $color-yellow-light;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    color: white;
+    box-shadow: 0 0 0 .2rem $color-yellow-light;
+}
+
+.btn-outline-primary {
+    font-weight: bold;
+    color: $color-yellow-light;
+    border-color: $color-yellow-light;
+    transition: 0.4s;
+}
+
+.btn-outline-primary:hover {
+    color: $color-blue-dark;
+    background-color: $color-yellow-light;
+    border-color: $color-yellow-light;
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 .2rem $color-yellow-bd
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: $color-yellow-light;
+    background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: $color-white;
+    background-color: $color-yellow-light;
+    border-color: $color-yellow-light
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem $color-yellow-light
+}
+
+//! CHECKBOX //
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: $color-yellow-light;
+    border-color: $color-yellow-dark;
+    box-shadow: 0 0 3px $color-yellow-dark;
+}
+
+.custom-checkbox .custom-control-input:focus~.custom-control-label::before {
+    border-color: $color-yellow-dark;
+    box-shadow: 0 0 3px $color-yellow-dark;
+}
+
+.custom-checkbox .custom-control-input:active~.custom-control-label::before {
+    border-color: $color-yellow-dark;
+    box-shadow: 0 0 3px $color-yellow-dark;
+    background: $color-yellow-light;
+}
+
+.custom-checkbox .custom-control-label::before {
+    border-radius: 0.25rem;
+}
+
+.custom-control-label::before {
+    background-color: $color-white-bg;
+}
+
+//! FORMULARIO //
+
+.form-control:focus {
+    background-color: $color-white-bg;
+    border-color: $color-yellow-dark;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem $color-yellow-bd;
+}

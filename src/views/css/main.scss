@@ -1,0 +1,349 @@
+@import 'variaveis';
+@import 'base';
+
+/*! NAVBAR */
+
+nav {
+    height: 80px;
+    background-color: $color-blue-dark;
+}
+
+.nav-link {
+    color: $color-white !important;
+    font-size: 1rem;
+
+
+    &:hover {
+        color: $color-yellow-light !important;
+        transition: 0.4s;
+    }
+}
+.ativo {
+    border-bottom: $color-yellow-light solid 2px;
+}
+
+.logo-nav {
+    border: none;
+    transition: 0.4s;
+    width: 130px;
+}
+
+.navbar-collapse {
+    margin: 0;
+}
+
+.btn-hamburguer {
+    background-color: $color-yellow-dark;
+}
+
+.collapse,
+.navbar-collapse {
+    padding: 0;
+    margin: 0;
+    background-color: $color-blue-dark;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(2, 49, 80)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+/*! INÍCIO */
+
+.inicio {
+    padding-top: 110px;
+    width: 100%;
+    height: 90%;
+    background: rgb(9, 26, 48);
+    background: linear-gradient(180deg, rgba(9, 26, 48, 1) 51%, rgba(3, 68, 112, 1) 100%);
+
+    .logo {
+        width: 400px;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        color: $color-white-bg;
+        animation: fadein 3s;
+    }
+
+    .carousel {
+        max-width: 1500px;
+    }
+}
+
+/*! SURGIMENTO */
+
+.surgimento {
+    padding-top: 90px;
+}
+
+.div-surgimento h4 {
+    font-size: 3rem;
+}
+
+.div-ideia {
+    max-width: 1200px;
+}
+
+.yellow-bar {
+    background-color: $color-yellow-light;
+    width: 320px;
+    height: 10px;
+    animation: aumentar-yellow-bar 2s;
+}
+
+@keyframes aumentar-yellow-bar {
+    from {
+        width: 0px;
+        ;
+    }
+
+    to {
+        width: 320px;
+        ;
+    }
+}
+
+.div-surgimento p {
+    text-indent: 2em;
+    font-size: 1.2rem;
+}
+
+.img-ideia {
+    width: 30%;
+    max-width: 300px;
+}
+
+.video {
+    max-width: 800px;
+}
+
+
+/*! PLATAFORMA */
+
+.white-bar {
+    background-color: $color-white-bg;
+    width: 300px;
+    height: 5px;
+}
+
+.plataforma {
+    background-color: $color-blue-light;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.plataforma h4 {
+    color: $color-white-bg;
+    font-size: 3.8rem;
+}
+
+.card-plat {
+    top: 5px;
+    background-color: rgba(0, 0, 20, 0.2);
+    transition: 0.3s;
+}
+
+.card-plat:hover {
+    top: 0;
+    background-color: rgba(0, 0, 20, 0.4)
+}
+
+.card-texto {
+    color: $color-white-bg;
+}
+
+.img-card {
+    width: 30%;
+}
+
+
+/*! CONTEÚDO */
+
+.conteudo {
+    background-color: $color-white-bg;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.conteudo h4 {
+    color: $color-blue-dark;
+    font-size: 3.8rem;
+}
+
+.blue-bar {
+    background-color: $color-blue-dark;
+    width: 120px;
+    height: 5px;
+}
+
+.card-cont {
+    font-weight: bold;
+    max-width: 250px;
+    /* transition: 0.3s; */
+}
+
+html.sr .card-cont {
+    visibility: hidden;
+}
+
+.card-cont:hover {
+    /* background-color: #e6cb58; */
+    background-color: rgb(240, 240, 240);
+    border: 2px solid #e6cb58;
+    border-radius: 5px;
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
+}
+
+.img-card-um,
+.img-card-tres,
+.img-card-sete {
+    width: 40%;
+    max-width: 130px;
+}
+
+.img-card-dois {
+    width: 48%;
+    max-width: 130px;
+}
+
+.img-card-quatro,
+.img-card-cinco,
+.img-card-seis,
+.img-card-oito {
+    width: 37%;
+    max-width: 130px;
+}
+
+
+/*! CONTATO */
+
+.contato {
+    padding-top: 90px;
+    background-color: #04426b;
+    background: linear-gradient(180deg, rgba(3, 68, 112, 1) 0%, rgba(9, 26, 48, 1) 74%);
+}
+
+.contato h4 {
+    color: $color-yellow-light;
+    font-size: 3.8rem;
+}
+
+.contato p {
+    color: $color-white-bg;
+    font-size: 1.4rem;
+}
+
+
+/*! FORMULÁRIO */
+
+.div-contato {
+    max-width: 600px;
+}
+
+.formulario {
+    max-width: 800px;
+    font-size: 18px;
+}
+
+.form-row label {
+    color: $color-white-bg;
+}
+
+#email,
+#nome {
+    max-width: 400px;
+}
+
+.btn-enviar {
+    width: 200px;
+}
+
+/*! RODAPÉ */
+
+.rodape {
+    color: $color-white-bg;
+    height: auto;
+    background-color: $color-blue-dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+}
+
+.rodape p {
+    padding-left: 15px;
+    font-size: 15px !important;
+    -webkit-margin-before: 0.2em;
+    -webkit-margin-after: 0.2em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.politica {
+    color: #d8aa1f;
+    font-weight: bold;
+}
+
+.politica:hover {
+    color: #d8aa1f;
+    font-weight: bold;
+}
+
+.div-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-social p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.fa-facebook-square,
+.fa-instagram,
+.fa-linkedin,
+.fa-twitter,
+.fa-youtube-play {
+    color: $color-white !important;
+    padding: 0 10px 0 1.1rem;
+    transition: 0.3s;
+}
+
+.fa-github {
+    padding-left: 0;
+}
+
+.fa-whatsapp {
+    padding-right: 0;
+}
+
+.fa-youtube-play:hover,
+.fa-facebook-square:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover {
+    color: $color-yellow-light !important;
+    transition: 0.3s;
+}
+
+
+/*! BTN TOP */
+
+.btn-top {
+    background-color: $color-yellow-light;
+    border-radius: 50%;
+    animation: fadein 1s;
+    z-index: 99999;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}

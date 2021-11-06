@@ -1,0 +1,44 @@
+@import 'variaveis';
+@import 'base';
+
+body {
+    background-color: #091a31;
+    background-image: url("../../img/blob.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h3,
+h6 {
+    color: aliceblue;
+}
+
+.form-row label {
+    color: aliceblue;
+}
+
+.div-logo {
+    margin: 60px 0 40px 0;
+    width: 100%;
+
+    .logo {
+        max-width: 300px;
+    }
+}
+
+.formulario {
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+a {
+    color: var(--yellow);
+
+    &:hover {
+        color: #d8aa1f;
+    }
+}
+
+@media (max-width: 767.98px) {}
