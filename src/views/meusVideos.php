@@ -63,7 +63,7 @@ session_start();
                 if ($video["publicado"]) {
                     echo ('<p class="aprovado"><b>APROVADO</b></p>');
                 } elseif ($video["recusado"]) {
-                    echo ('<p class="recusado"><b>RECUSADO</b></p>');
+                    echo ('<p class="reprovado"><b>RECUSADO</b></p>');
                 } else {
                     echo ('<p class="em-analise"><b>Em análise</b></p>');
                 }

@@ -135,10 +135,6 @@ h6 {
   color: aliceblue;
 }
 
-.form-row label {
-  color: aliceblue;
-}
-
 .div-logo {
   margin: 60px 0 40px 0;
   width: 100%;
@@ -149,9 +145,13 @@ h6 {
 }
 
 .formulario {
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.formulario .form-row label {
+  color: aliceblue;
 }
 
 a {

@@ -1,6 +1,5 @@
 @import '../bases/variaveis';
 @import '../bases/base';
-
 body {
     background-color: #091a31;
     background-image: url("../../../img/blob.svg");
@@ -14,34 +13,33 @@ h6 {
     color: aliceblue;
 }
 
-.form-row label {
-    color: aliceblue;
-}
-
 .div-logo {
     margin: 60px 0 40px 0;
     width: 100%;
-
     .logo {
         max-width: 300px;
     }
 }
 
 .formulario {
-    max-width: 500px;
+    max-width: 600px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
+    .form-row {
+        label {
+            color: aliceblue;
+        }
+    }
 }
 
 a {
     color: var(--yellow);
-
     &:hover {
         color: #d8aa1f;
     }
 }
 
-.div-checkbox{
+.div-checkbox {
     display: flex;
     justify-content: space-around;
 }

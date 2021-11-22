@@ -29,7 +29,7 @@
                     </div>
                     <div class="form-row pt-2 ">
                         <label for="sobrenome ">Sobrenome</label>
-                        <input type="text" class="form-control" id="Sobrenome"  name="sobrenome" aria-describedby="sobrenome " placeholder="Digite se Sobrenome" required>
+                        <input type="text" class="form-control" id="Sobrenome" name="sobrenome" aria-describedby="sobrenome " placeholder="Digite se Sobrenome" required>
                     </div>
                     <div class="form-row pt-2">
                         <label for="email">E-mail</label>
@@ -39,22 +39,59 @@
                         <label for="senha" class="w-25">Senha</label>
                         <input type="password" class="form-control" id="senha" name="senha" aria-describedby="senha" placeholder="Crie uma senha" required>
                     </div>
-                    <!-- <div class="form-row pt-2">
-                    <label for="confirme-senha">Confirmar Senha</label>
-                    <input type="password" class="form-control" id="confirme-senha" aria-describedby="confirme-senha" placeholder="Confirme a senha" required>
-                </div> -->
+                    <div class="form-row pt-2">
+                        <label for="select_cat1">Selecione 3 assuntos de interesse (1 obrigatório):</label>
+                        <div class="d-flex div-select">
+                            <select class="form-control" id="select_cat1" name="categoria1" required>
+                                <option selected disabled>1º assunto...</option>
+                                <?php
+                                include_once "../models/categoriasModel.php";
+                                foreach ($dados_categorias as $categoria) {
+                                    echo ('
+                    <option value="' . $categoria["id_categoria"] . '">' . ucfirst($categoria["nome"]) . '</option>
+                    ');
+                                }
+                                ?>
+                            </select>
+                            <select class="form-control ml-1" id="select_cat2" name="categoria2">
+                                <option selected disabled>2º assunto...</option>
+                                <?php
+                                include_once "../models/categoriasModel.php";
+                                foreach ($dados_categorias as $categoria) {
+                                    echo ('
+                      <option value="' . $categoria["id_categoria"] . '">' . ucfirst($categoria["nome"]) . '</option>
+                                ');
+                                }
+                                ?>
+                            </select>
+                            <select class="form-control ml-1" id="select_cat3" name="categoria3">
+                                <option selected disabled>3º assunto...</option>
+                                <?php
+                                include_once "../models/categoriasModel.php";
+                                foreach ($dados_categorias as $categoria) {
+                                    echo ('
+                      <option value="' . $categoria["id_categoria"] . '">' . ucfirst($categoria["nome"]) . '</option>
+                                ');
+                                }
+                                ?>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row pt-2">
+                        <label>Identifique o tipo de usuário:</label>
+                    </div>
                     <div class="div-checkbox">
-                        <div class="form-row pt-2 custom-control custom-checkbox ">
+                        <div class="form-row custom-control custom-checkbox ">
                             <input type="checkbox" class="custom-control-input" id="aluno" name="aluno">
                             <label class="custom-control-label" for="aluno">aluno</label>
                         </div>
 
-                        <div class="form-row pt-2 custom-control custom-checkbox ">
+                        <div class="form-row custom-control custom-checkbox ">
                             <input type="checkbox" class="custom-control-input" id="professor" name="professor">
                             <label class="custom-control-label" for="professor">professor</label>
                         </div>
 
-                        <div class="form-row pt-2 custom-control custom-checkbox ">
+                        <div class="form-row custom-control custom-checkbox ">
                             <input type="checkbox" class="custom-control-input" id="mentor" name="mentor">
                             <label class="custom-control-label" for="mentor">mentor</label>
                         </div>

@@ -29,15 +29,16 @@ session_start();
     </header>
 
     <section class="videos pt-4 mt-3">
-        
-      
-            <?php
-            include_once "../models/videosModel.php";
-            echo ('<h3>Vídeos sobre '. $dados_videos_cat[0]['nome_categoria'].'</h3>
+        <?php
+        include_once "../models/videosModel.php";
+        echo ('<h3>Vídeos sobre ' . $dados_videos_cat[0]['nome_categoria'] . '</h3>
             <div class="content d-flex mt-4">');
-            foreach ($dados_videos_cat as $video) {
+            if(!$dados_videos_cat) {
+                echo ('<img src="../img/pesquisa-nao-encontrada.png">');
+            }
+        foreach ($dados_videos_cat as $video) {
 
-                echo ('
+            echo ('
                 
                 <div class="card mb-3 shadow" style="width: 30%">
                     <a href="./video.php?id=' . $video["id_video"] . '">
@@ -54,7 +55,7 @@ session_start();
                     </div>
                 </div>
                 ');
-            } ?>
+        } ?>
         </div>
 
     </section>

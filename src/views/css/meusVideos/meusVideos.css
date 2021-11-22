@@ -212,6 +212,18 @@ body {
   right: 18px;
 }
 
+.content .list-videos li form .aprovado {
+  color: green !important;
+}
+
+.content .list-videos li form .reprovado {
+  color: red;
+}
+
+.content .list-videos li form .em-analise {
+  color: blue;
+}
+
 .modal-content {
   background-color: #f7f7f7;
 }

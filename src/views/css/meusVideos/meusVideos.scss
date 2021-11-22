@@ -34,9 +34,21 @@ body {
                     position: absolute;
                     bottom: 0px;
                     right: 18px;
+                }
 
+                .aprovado {
+                    color: green !important;
+                }
+
+                .reprovado {
+                    color: red;
+                }
+                
+                .em-analise {
+                    color: blue;
                 }
             }
+
         }
     }
 

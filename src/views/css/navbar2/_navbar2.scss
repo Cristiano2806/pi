@@ -1,11 +1,11 @@
 /*! NAVBAR */
-
 nav {
     height: 80px;
     background-color: $color-blue-dark;
 
     .nav-item {
         margin: 0 15px 0 15px;
+
 
         a {
             font-size: 1.3rem;
@@ -48,10 +48,6 @@ nav {
         background-color: $color-blue-dark;
     }
 }
-
-
-
-
 
 
 .navbar-toggler .navbar-toggler-icon {
