@@ -1,17 +1,14 @@
 <?php
 
 
-$telefone = "(19) 992990279";
-
-function extraiDDD($telefone)
-{
-    $array_1 = explode(")", $telefone);
-    $phone = $array_1[1];
-    $array_2 = explode("(", $array_1[0]);
-    $ddd = $array_2[1];
-    echo("DDD: " . $ddd);
-    echo("Telefone: " . $phone);
+function geraSenhaaleatoria($length = 8) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters);
+    $randomString = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomString .= $characters[rand(0, $charactersLength - 1)];
+    }
+    return $randomString;
 }
 
-extraiDDD($telefone);
 
