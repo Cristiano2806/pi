@@ -4,19 +4,21 @@ nav {
     background-color: $color-blue-dark;
 
     .nav-item {
+        display: flex;
+        justify-content: center;
         margin: 0 15px 0 15px;
 
-
         a {
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
     }
 
     .nav-link {
+
         color: $color-white !important;
         font-size: 1rem;
-    
-    
+
+
         &:hover {
             color: $color-yellow-light !important;
             transition: 0.4s;
@@ -40,7 +42,7 @@ nav {
     .btn-hamburguer {
         background-color: $color-yellow-dark;
     }
-    
+
     .collapse,
     .navbar-collapse {
         padding: 0;

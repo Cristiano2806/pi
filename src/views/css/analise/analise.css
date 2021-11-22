@@ -129,11 +129,17 @@ nav {
 }
 
 nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 15px 0 15px;
 }
 
 nav .nav-item a {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 nav .nav-link {

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="pt-br">
 
@@ -21,17 +25,29 @@
                 <img src="../img/Open-unifeob.png" class="logo" alt="logo Open Unifeob" />
             </a>
         </div>
-        <div class="container shadow formulario">
-            <h3 class="text-center pt-3 pb-2"> Recuperar senha</h3>
-            <div class="form-group pl-5 pr-5">
-                <div class="form-row pt-2">
-                    <label for="email ">E-mail</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu E-mail" required>
-                </div>
-                <div class="form-row pt-3 justify-content-center pb-3">
-                    <button type="submit" class="btn btn-amarelo">Enviar</button>
-                </div>
+        <div class=" d-flex justify-content-center">
+            <?php
+            if (isset($_SESSION["erroLogin"])) :
+            ?>
+                <div class="alert alert-danger w-25 text-center" role="alert"><?php echo $_SESSION["erroLogin"] ?></div>
+            <?php
+            endif;
+            unset($_SESSION["erroLogin"]);
+            ?>
             </div>
+        <div class="container shadow formulario">
+            <form action="../models/recuperaSenhaModel.php" method="post">
+                <h3 class="text-center pt-3 pb-2"> Recuperar senha</h3>
+                <div class="form-group pl-5 pr-5">
+                    <div class="form-row pt-2">
+                        <label for="email ">E-mail</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div class="form-row pt-3 justify-content-center pb-3">
+                        <button type="submit" class="btn btn-amarelo">Enviar</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>

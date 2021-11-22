@@ -6,17 +6,22 @@ if ($_SESSION['tipo'] == 1) {
 
     echo ('
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
         <a class="navbar-brand nav-item ativo logo-nav" id="logo-nav" href="./principal.php"><img src="../img/Open-unifeob.png" alt="logo Open Unifeob" class="logo-nav"></a>
         <button class="navbar-toggler btn-hamburguer" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse nav-bar" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0 ml-md-5" action="../views/pesquisa.php?search=" method="get">
-                <input class="form-control mr-sm-2" type="search" placeholder="digite sua pesquisa" aria-label="Search" name="search">
-                <button class="btn btn-outline-amarelo my-2 my-sm-0" type="submit">Pesquisar</button>
-            </form>
+
             <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item pesquisa">
+                    <form class="form-inline my-2 my-lg-0 ml-md-5" action="../views/pesquisa.php?search=" method="get">
+                        <input class="form-control mr-sm-2" type="search" placeholder="pesquisa" aria-label="Search" name="search">
+                        <button class="btn btn-outline-amarelo my-2 my-sm-0" type="submit">Pesquisar</button>
+                    </form>
+                </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuLink-assuntos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-list-ul"></i>&nbsp assuntos</a>
