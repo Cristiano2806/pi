@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./views/css/main.css">
+    <link rel="stylesheet" href="./views/css/pagInicial/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -36,10 +36,10 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li>
-                        <a class="btn btn-primary mt-3 mt-lg-0 ml-lg-4" type="button" href="./views/login.php">Entrar</a>
+                        <a class="btn btn-amarelo mt-3 mt-lg-0 ml-lg-4" type="button" href="./views/login.php">Entrar</a>
                     </li>
                     <li>
-                        <a class="btn btn-outline-primary mt-3 mt-lg-0 ml-lg-3" type="button" href="./views/cadastro.php">Cadastrar</a>
+                        <a class="btn btn-outline-amarelo mt-3 mt-lg-0 ml-lg-3" type="button" href="./views/cadastro.php">Cadastrar</a>
                     </li>
                 </ul>
             </div>
@@ -228,7 +228,7 @@
                                 <label class="custom-control-label" for="check-aluno">Sou aluno UNIFEOB</label>
                             </div>
                             <div class="form-row pt-3 pb-3">
-                                <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
+                                <button type="submit" class="btn btn-amarelo btn-enviar">Enviar</button>
                             </div>
                         </div>
                     </div>

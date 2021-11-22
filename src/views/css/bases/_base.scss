@@ -9,7 +9,7 @@ body {
 
 //! BOTÕES //
 
-.btn-primary {
+.btn-amarelo {
     color: #fff;
     background-color: $color-yellow-light;
     border-color: var(--yellow);
@@ -19,68 +19,68 @@ body {
     width: 100px;
 }
 
-.btn-primary:hover {
+.btn-amarelo:hover  {
     color: $color-blue-dark !important;
     background-color: $color-yellow-dark;
     border-color: $color-yellow-dark;
 }
 
-.btn-primary.focus,
-.btn-primary:focus {
+.btn-amarelo.focus,
+.btn-amarelo:focus{
     box-shadow: 0 0 0 .2rem $color-yellow-bd
 }
 
 
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
+.btn-amarelo:not(:disabled):not(.disabled).active,
+.btn-amarelo:not(:disabled):not(.disabled):active,
+.show>.btn-amarelo.dropdown-toggle {
     color: $color-blue-dark;
     background-color: $color-yellow-light;
     border-color: $color-yellow-light;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
+.btn-amarelo:not(:disabled):not(.disabled).active:focus,
+.btn-amarelo:not(:disabled):not(.disabled):active:focus,
+.show>.btn-amarelo.dropdown-toggle:focus{
     color: white;
     box-shadow: 0 0 0 .2rem $color-yellow-light;
 }
 
-.btn-outline-primary {
+.btn-outline-amarelo {
     font-weight: bold;
     color: $color-yellow-light;
     border-color: $color-yellow-light;
     transition: 0.4s;
 }
 
-.btn-outline-primary:hover {
+.btn-outline-amarelo:hover {
     color: $color-blue-dark;
     background-color: $color-yellow-light;
     border-color: $color-yellow-light;
 }
 
-.btn-outline-primary.focus,
-.btn-outline-primary:focus {
+.btn-outline-amarelo.focus,
+.btn-outline-amarelo:focus{
     box-shadow: 0 0 0 .2rem $color-yellow-bd
 }
 
-.btn-outline-primary.disabled,
-.btn-outline-primary:disabled {
+.btn-outline-amarelo.disabled,
+.btn-outline-amarelo:disabled{
     color: $color-yellow-light;
     background-color: transparent
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled).active,
-.btn-outline-primary:not(:disabled):not(.disabled):active,
-.show>.btn-outline-primary.dropdown-toggle {
+.btn-outline-amarelo:not(:disabled):not(.disabled).active,
+.btn-outline-amarelo:not(:disabled):not(.disabled):active,
+.show>.btn-outline-amarelo.dropdown-toggle{
     color: $color-white;
     background-color: $color-yellow-light;
     border-color: $color-yellow-light
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-amarelo:not(:disabled):not(.disabled).active:focus,
+.btn-outline-amarelo:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-amarelo.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem $color-yellow-light
 }
 
@@ -114,8 +114,8 @@ body {
 //! FORMULARIO //
 
 .form-control:focus {
-    background-color: $color-white-bg;
-    border-color: $color-yellow-dark;
+    background-color: white;
+    border-color: rgb(228, 209, 104);
     outline: 0;
-    box-shadow: 0 0 0 .2rem $color-yellow-bd;
+    box-shadow: 0 0 0 .2rem rgb(233, 233, 175);
 }

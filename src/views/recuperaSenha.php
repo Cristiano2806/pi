@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/registro/register.css">
     <title>Login</title>
 
 </head>
@@ -28,7 +29,7 @@
                     <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu E-mail" required>
                 </div>
                 <div class="form-row pt-3 justify-content-center pb-3">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-amarelo">Enviar</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,56 @@
+@import '../bases/variaveis';
+@import '../bases/base';
+@import '../navbar2/navbar2';
+
+body {
+    background-color: $color-blue-bg;
+}
+
+.container {
+    margin-top: 100px !important;
+    background-color: aliceblue;
+    padding: 20px;
+
+    .infos {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 15px 0 15px;
+
+        .data-autor {
+            p {
+                margin-bottom: 2px !important;
+            }
+        }
+
+        .likes-views {
+            font-size: 1.3rem;
+        }
+
+        .like {
+            margin-right: 10px;
+
+            a {
+                color: black;
+            }
+            i:hover{
+            color: $color-yellow-dark;
+            }
+        }
+    }
+
+    .conteudo {
+        padding: 15px;
+        border-top: 1px solid rgb(148, 148, 148);
+        margin-top: 15px;
+
+        p {
+            font-size: 1.2rem;
+            padding: 15px;
+        }
+
+    }
+
+}
+
+@import '../bases/rodape';

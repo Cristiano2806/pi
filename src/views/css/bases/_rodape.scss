@@ -1,0 +1,71 @@
+/*! RODAPÉ */
+
+.rodape {
+    color: $color-white-bg;
+    height: auto;
+    background-color: $color-blue-dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+
+    p {
+        padding-left: 15px;
+        font-size: 15px !important;
+        -webkit-margin-before: 0.2em;
+        -webkit-margin-after: 0.2em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .politica {
+        color: #d8aa1f;
+        font-weight: bold;
+
+        &:hover {
+            color: #d8aa1f;
+            font-weight: bold;
+        }
+    }
+
+
+    .div-social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding-left: 0;
+        }
+    }
+
+
+    .fa-facebook-square,
+    .fa-instagram,
+    .fa-linkedin,
+    .fa-twitter,
+    .fa-youtube-play {
+        color: $color-white !important;
+        padding: 0 10px 0 1.1rem;
+        transition: 0.3s;
+    }
+
+    .fa-github {
+        padding-left: 0;
+    }
+
+    .fa-whatsapp {
+        padding-right: 0;
+    }
+
+    .fa-youtube-play:hover,
+    .fa-facebook-square:hover,
+    .fa-instagram:hover,
+    .fa-linkedin:hover,
+    .fa-twitter:hover {
+        color: $color-yellow-light !important;
+        transition: 0.3s;
+    }
+}

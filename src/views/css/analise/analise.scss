@@ -1,0 +1,40 @@
+@import '../bases/variaveis';
+@import '../bases/base';
+@import '../navbar2/navbar2';
+
+body {
+    background-color: $color-blue-bg;
+}
+
+.content {
+    margin-top: 110px !important;
+    h2 {
+        font-family: $font-rock;
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 5px rgb(109, 109, 109);
+    }
+    .list-videos {
+        margin: 15px;
+        padding: 0;
+        li {
+            border-radius: 5px;
+            background-color: $color-white-bg;
+            list-style: none;
+            form {
+                position: relative;
+                .botoes {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 18px;
+                    button {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    background-color: $color-white-bg;
+}

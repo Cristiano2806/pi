@@ -1,9 +1,9 @@
-@import 'variaveis';
-@import 'base';
+@import '../bases/variaveis';
+@import '../bases/base';
 
 body {
     background-color: #091a31;
-    background-image: url("../../img/blob.svg");
+    background-image: url("../../../img/blob.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -39,6 +39,11 @@ a {
     &:hover {
         color: #d8aa1f;
     }
+}
+
+.div-checkbox{
+    display: flex;
+    justify-content: space-around;
 }
 
 @media (max-width: 767.98px) {}

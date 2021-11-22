@@ -5,48 +5,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/registro/register.css">
     <title>Cadastro</title>
 
 </head>
 
 <body>
     <main>
-        <div class="text-center div-logo">
-            <a href="../index.php">
-                <img src="../img/Open-unifeob.png" class="logo" alt="logo Open Unifeob" />
-            </a>
-        </div>
-        <div class="container shadow formulario">
-            <h3 class="text-center pt-3 pb-2"> Crie sua Conta</h3>
-            <div class="form-group pl-5 pr-5">
-                <div class="form-row ">
-                    <label for="nome ">Nome</label>
-                    <input type="text " class="form-control" id="nome " aria-describedby="nome" placeholder="Digite seu Nome" required>
-                </div>
-                <div class="form-row pt-2 ">
-                    <label for="sobrenome ">Sobrenome</label>
-                    <input type="text" class="form-control" id="Sobrenome" aria-describedby="sobrenome " placeholder="Digite se Sobrenome" required>
-                </div>
-                <div class="form-row pt-2">
-                    <label for="email">E-mail</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Digite seu E-mail" required>
-                </div>
-                <div class="form-row pt-2">
-                    <label for="senha" class="w-25">Senha</label>
-                    <input type="password" class="form-control" id="senha" aria-describedby="senha" placeholder="Crie uma senha" required>
-                </div>
-                <div class="form-row pt-2">
+        <form action="../models/cadastroModel.php" method="post">
+            <div class="text-center div-logo">
+                <a href="../index.php">
+                    <img src="../img/Open-unifeob.png" class="logo" alt="logo Open Unifeob" />
+                </a>
+            </div>
+            <div class="container shadow formulario">
+                <h3 class="text-center pt-3 pb-2"> Crie sua Conta</h3>
+                <div class="form-group pl-5 pr-5">
+                    <div class="form-row ">
+                        <label for="nome ">Nome</label>
+                        <input type="text " class="form-control" id="nome" name="nome" aria-describedby="nome" placeholder="Digite seu Nome" required>
+                    </div>
+                    <div class="form-row pt-2 ">
+                        <label for="sobrenome ">Sobrenome</label>
+                        <input type="text" class="form-control" id="Sobrenome"  name="sobrenome" aria-describedby="sobrenome " placeholder="Digite se Sobrenome" required>
+                    </div>
+                    <div class="form-row pt-2">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <div class="form-row pt-2">
+                        <label for="senha" class="w-25">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" aria-describedby="senha" placeholder="Crie uma senha" required>
+                    </div>
+                    <!-- <div class="form-row pt-2">
                     <label for="confirme-senha">Confirmar Senha</label>
                     <input type="password" class="form-control" id="confirme-senha" aria-describedby="confirme-senha" placeholder="Confirme a senha" required>
-                </div>
-                <div class="form-row pt-3 justify-content-center pb-3">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                </div> -->
+                    <div class="div-checkbox">
+                        <div class="form-row pt-2 custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="aluno" name="aluno">
+                            <label class="custom-control-label" for="aluno">aluno</label>
+                        </div>
+
+                        <div class="form-row pt-2 custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="professor" name="professor">
+                            <label class="custom-control-label" for="professor">professor</label>
+                        </div>
+
+                        <div class="form-row pt-2 custom-control custom-checkbox ">
+                            <input type="checkbox" class="custom-control-input" id="mentor" name="mentor">
+                            <label class="custom-control-label" for="mentor">mentor</label>
+                        </div>
+                    </div>
+
+                    <div class="form-row pt-3 justify-content-center pb-3">
+                        <button type="submit" class="btn btn-amarelo">Cadastrar</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
         <div class="text-center">
             <h6>Já possui cadastrado? <a href="login.php">Acesse aqui</a></h6>
         </div>
