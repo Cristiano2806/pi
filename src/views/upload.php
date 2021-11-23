@@ -24,7 +24,7 @@ session_start();
   </header>
   <h2 class="text-center mb-3">Compartilhe seu vídeo</h2>
   <div class="container col-lg-6 col-xl-5 mt-5">
-    <form action="../models/uploadVideoModel.php" method="post" class="shadow">
+    <form action="../models/uploadVideoModel.php" method="post" class="shadow form">
       <div class="form-group">
         <label for="titulo">Título:</label>
         <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Digite aqui o título do vídeo" required>

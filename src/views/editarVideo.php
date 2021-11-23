@@ -26,7 +26,7 @@ session_start();
     </header>
     <h2 class="text-center mb-3">Edite seu vídeo</h2>
     <div class="container col-lg-6 col-xl-5 mt-5">
-        <form action="../models/updateVideoModel.php?id=<?php echo $_GET["id"]?>" method="post" class="shadow">
+        <form action="../models/updateVideoModel.php?id=<?php echo $_GET["id"]?>" method="post" class="shadow form">
             <?php include_once "../models/videoModel.php"?>
             <div class="form-group">
                 <label for="titulo">Título:</label>

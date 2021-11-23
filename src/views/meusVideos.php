@@ -6,7 +6,7 @@ session_start();
 <html lang="pt-br">
 
 <head>
-    <title>Open Unifeob - Aprovação</title>
+    <title>Open Unifeob - Meus vídeos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,7 +32,7 @@ session_start();
                 echo ('
                 <li class="p-3 shadow mb-4">
                 
-                    <form class="d-flex mb-3 mt-3" method="post">
+                    <form class="d-flex mb-3 mt-3 form-status" method="post">
                         <div class="col-md-3">
                             <img class="w-100" src="https://img.youtube.com/vi/' . $video["link"] . '/hqdefault.jpg" alt="">
                         </div>
@@ -61,14 +61,13 @@ session_start();
                         <span><b>Status:</b>
                         ');
                 if ($video["publicado"]) {
-                    echo ('<p class="aprovado"><b>APROVADO</b></p>');
+                    echo ('<p><b class="aprovado">APROVADO</b> por: '.$dados_feedback["nome"]. " ".$dados_feedback["sobrenome"]. '</p>');
                 } elseif ($video["recusado"]) {
-                    echo ('<p class="reprovado"><b>RECUSADO</b></p>');
+                    echo ('<p><b class="reprovado">RECUSADO</b> por: '.$dados_feedback["nome"]. " ".$dados_feedback["sobrenome"]. '</p>');
                 } else {
-                    echo ('<p class="em-analise"><b>Em análise</b></p>');
+                    echo ('<p><b class="em-analise">Em análise</b></p>');
                 }
                 echo ('     
-                <p> por: '.$dados_feedback["nome"]. " ".$dados_feedback["sobrenome"]. '</p>
                 </span>
                             
                             <button type="button" class="btn btn-secondary mt-2" data-toggle="modal" data-target="#feedback" data-feedback="' . $dados_feedback["feedback"] . '"><i class="fas fa-comments"></i> Feedback</button>

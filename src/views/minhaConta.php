@@ -26,7 +26,7 @@ session_start();
     </header>
     <h2 class="text-center mb-3">Minha Conta</h2>
     <?php include_once "../models/minhaContaModel.php" ?>
-    <form class="container col-lg-6 col-xl-5 mt-4" action="../models/minhaContaUpdateModel.php?id=<?php echo $id_user ?>" method="post">
+    <form class="container col-lg-6 col-xl-5 mt-4 form" action="../models/minhaContaUpdateModel.php?id=<?php echo $id_user ?>" method="post">
         <div class="form-row">
             <div class="col-md-5 mb-3">
                 <label for="nome">Nome:</label>

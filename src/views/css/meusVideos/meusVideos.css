@@ -208,25 +208,25 @@ body {
   list-style: none;
 }
 
-.content .list-videos li form {
+.content .list-videos li .form-status {
   position: relative;
 }
 
-.content .list-videos li form .botoes {
+.content .list-videos li .form-status .botoes {
   position: absolute;
   bottom: 0px;
   right: 18px;
 }
 
-.content .list-videos li form .aprovado {
+.content .list-videos li .form-status .aprovado {
   color: green !important;
 }
 
-.content .list-videos li form .reprovado {
+.content .list-videos li .form-status .reprovado {
   color: red;
 }
 
-.content .list-videos li form .em-analise {
+.content .list-videos li .form-status .em-analise {
   color: blue;
 }
 
